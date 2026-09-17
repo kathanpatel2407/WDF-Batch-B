@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <h1><u>Charotar University of Science and Technology</u></h1>
+    <hr>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+      <nav>
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="Attendance.html">Attendance</a>
+    <a href="Results.html">Results</a>
+    <a href="Timetable.html">Timetable</a>
+    <a href="Courses.html">Registered Courses</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="Announcements.html">Announcements</a>
+    <a href="Notice.html">Notice</a>
+    <a href="login.html">Logout</a>
+</nav>
+    <h1><u>Feedback</u></h1>
+    <p><strong>"Your thoughts shape our roadmap. Share your feedback!"</strong></p>
+    <form action="#">
+        <strong>How was your experience with the Portal?</strong>
+        <br><br>
+
+        <input type="radio" id="good" name="feedback" value="Good" required>
+        <label for="good">Good</label>
+
+        <input type="radio" id="average" name="feedback" value="Average">
+        <label for="average">Average</label>
+
+        <input type="radio" id="bad" name="feedback" value="Bad">
+        <label for="bad">Bad</label>
+
+        <br><br>
+
+        <strong>Is there anything that we could improve?</strong>
+        <br><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="30"
+            placeholder="Type your comment here"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+
+    <hr>
+
+    <h3>Thank You!</h3>
+    <p><strong>We appreciate your valuable feedback. Your suggestions help us improve our portal.</strong></p>
+
+    <br>
+
+    <a href="Homepage.html">HOME PAGE</a>
+    <script src="feedback.js"></script>
+</body>
+</html>

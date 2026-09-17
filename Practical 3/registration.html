@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <center>
+        
+    <h1><u>Student Registration Form</u></h1>
+    <img src="images (1).jpg" height="180"  width="200" alt="Charusat logo="80">
+    
+    <form id="registrationForm">
+    
+    <input type="text" id="name" placeholder="Full Name">
+    <br><br>
+
+    <input type="email" id="email" placeholder="Email">
+    <br><br>
+
+    <input type="tel" id="mobile" placeholder="Mobile Number">
+    <br><br>
+
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <br><br>
+
+    <select id="course">
+        <option value="">Select Course</option>
+        <option value="IT">Information Technology</option>
+        <option value="CSE">Computer Science</option>
+        <option value="CE">Computer Engineering</option>
+    </select>
+    <br><br>
+
+    <select id="year">
+        <option value="">Select Year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+    </select>
+    <br><br>
+
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+
+    <br><br>
+
+    <input type="checkbox" id="terms">
+    I accept the terms and conditions
+
+    <br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+
+    </form>
+    
+    <p id="message"></p>
+    
+    </center>
+    
+    <script src="registration.js"></script>
+</body>
+</html>
