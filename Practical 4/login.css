@@ -1,0 +1,75 @@
+body
+{
+    font-family:Arial, sans-serif;
+    background-color:#e6f2ff;
+    margin:0;
+    padding:20px;
+}
+h1
+{
+    color: #003366;
+}
+h2 
+{
+    color: #0059b3;
+}
+form 
+{
+    background-color: white;
+    border: 2px solid #0059b3;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0px 5px 10px black;
+}
+img 
+{
+    border:2px solid #0059b3;
+    border-radius:10px;
+    padding:5px;
+    background-color:white;
+}
+input[type="text"],
+input[type="password"] 
+{
+    width:250px;
+    padding:10px;
+    border:1px solid black;
+    border-radius:5px;
+    margin-top:5px;
+}
+input[type="checkbox"]
+{
+    margin-right:5px;
+}
+button
+{
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button[type="submit"]
+{
+    background-color: #0059b3;
+    color: white;
+}
+button[type="reset"] 
+{
+    background-color: #777777;
+    color: white;
+}
+button:hover
+{
+    opacity: 0.8;
+}
+hr
+{
+    border: 1px solid #0059b3;
+}
+small 
+{
+    color: #555555;
+}

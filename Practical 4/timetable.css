@@ -1,0 +1,105 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    margin: 0;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
+hr {
+    border: 1px solid #0059b3;
+}
+
+nav
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #0059b3;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+
+nav a
+{
+    display: block;
+    color: white;
+    background-color: #0059b3;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav a:hover
+{
+    background-color: #003366;
+}
+
+header h1{
+    color: #0059b3;
+    margin: 25px;
+}
+
+table{
+    border: 1;
+    margin:15px 15px 15px 250px;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgray;
+}
+
+th{
+    background-color: #0059b3;
+    color: white;
+    padding: 12px;
+    border: 1px solid #003366;
+}
+
+td{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #aaaaaa;
+    font-size: 14px;
+}
+
+td:first-child{
+    background-color: #d9ecff;
+    color: #003366;
+    font-weight: bold;
+}
+
+td[rowspan]{
+    background-color:  #d9ecff;
+    font-weight: bold;
+    color:#003366 ;
+}
+
+td:hover{
+    background-color: #e6f2ff;
+}
+
+a {
+    margin:0px 0px 0px 160px;
+    display: inline-block;
+    background-color: #0059b3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #003366;
+}
