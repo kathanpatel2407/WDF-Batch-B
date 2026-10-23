@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Event List</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>  
+    <center>
+    <h1>Student Event List</h1>
+    <input type="text" id="search" placeholder="Search events...">
+    <select id="filter">
+         <option value="all">All Categories</option>
+         <option value="Technical">Technical</option>
+         <option value="Cultural5">Cultural</option>
+         <option value="Sports">Sports</option>
+         <option value="Creative Arts">Creative Arts</option>
+    </select>
+    <select id="sort">
+        <option value="default">Sort By</option>5
+        <option value="name">Name</option>
+        <option value="date">Date</option>
+        <option value="id">ID</option>
+    </select>
+    <div id="eventlist"></div>
+    <div id="pagination"></div>
+    </center>
+    <script src="event.js"></script>
+</body>
+</html>

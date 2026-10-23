@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name":"Hackathon 2026",
+        "category":"Technical",
+        "date":"2026-10-05",
+        "venue":"Computer Lab"
+    },
+    {
+        "id":2,
+        "name":"Poster Making Competition",
+        "category":"Creative Arts",
+        "date":"2026-10-10",
+        "venue":"University Auditorium"
+    },
+    {
+        "id":3,
+        "name":"Football Tournament",
+        "category":"Sports",
+        "date":"2026-10-15",
+        "venue":"University Ground"
+    },
+    {
+        "id":4,
+        "name":"Coding Competition",
+        "category":"Technical",
+        "date":"2026-10-20",
+        "venue":"Programming Lab"
+    },
+    {
+        "id": 5,
+        "name":"Dance Competition",
+        "category":"Cultural",
+        "date":"2026-10-25",
+        "venue":"Main Hall"
+    },
+    {
+        "id": 6,
+        "name":"Cricket Tournament",
+        "category":"Sports",
+        "date":"2026-11-01",
+        "venue":"University Ground"
+    }
+]

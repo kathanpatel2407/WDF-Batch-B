@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #003366;
+}
+
+nav
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #0059b3;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+nav a
+{
+    display: block;
+    color: white;
+    background-color: #0059b3;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav a:hover
+{
+    background-color: #003366;
+}
+
+
+body > h1 {
+    color: #0059b3;
+    margin-top: 30px;
+}
+
+hr {
+    border: 1px solid #0059b3;
+    margin: 20px 0;
+}
+
+p {
+    color: #555555;
+    font-size: 16px;
+}
+
+form {
+    background-color: white;
+    width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #0059b3;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px lightgray;
+}
+
+strong {
+    color: #003366;
+    font-size: 17px;
+}
+
+input[type="radio"] {
+    margin-left: 15px;
+}
+
+label {
+    color: #333333;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #999999;
+    border-radius: 6px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    border: 2px solid #0059b3;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #0059b3;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #777777;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+input[type="reset"]:hover {
+    background-color: #555555;
+}
+
+h3 {
+    color: #0059b3;
+    font-size: 22px;
+}
+
+a {
+    display: inline-block;
+    background-color: #0059b3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #003366;
+}

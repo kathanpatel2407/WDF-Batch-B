@@ -1,0 +1,229 @@
+css
+/* ==========================================
+   LIGHT / DARK MODE
+   ========================================== */
+
+:root {
+    --bg: white;
+    --text: black;
+    --card: #f2f2f2;
+    --primary: #1d4ed8;
+}
+
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: white;
+    --card: #222;
+    --primary: #60a5fa;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+/* ==============================
+   HAMBURGER MENU / SIDEBAR
+   ============================== */
+
+#portalNav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #0864b9;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+
+    box-sizing: border-box;
+}
+
+/* Navigation links */
+#portalNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px 35px;
+    display: block;
+}
+
+#portalNav a:hover {
+    background-color: #064f94;
+}
+
+/* Hamburger button */
+#hamburgerBtn {
+    position: relative;
+    z-index: 1100;
+
+    width: 40px;
+    height: 35px;
+    font-size: 28px;
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+}
+
+/* ==============================
+   MAIN CONTENT
+   ============================== */
+
+body {
+    margin: 0;
+    padding-left: 260px;
+    box-sizing: border-box;
+}
+
+/* ==============================
+   MOBILE / HAMBURGER BEHAVIOUR
+   ============================== */
+
+@media (max-width: 800px) {
+
+    body {
+        padding-left: 0;
+    }
+
+    #portalNav {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    #portalNav.show-menu {
+        transform: translateX(0);
+    }
+}
+/* ==========================================
+   NOTIFICATION BANNER
+   ========================================== */
+
+#notificationBanner {
+    background: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#closeNotification {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   CONTENT SLIDER
+   ========================================== */
+
+#contentSlider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 30px;
+    text-align: center;
+    background: var(--card);
+    border-radius: 10px;
+    min-height: 120px;
+    box-sizing: border-box;
+}
+
+.slide {
+    display: none;
+}
+
+.active-slide {
+    display: block;
+}
+
+#previousSlide,
+#nextSlide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: var(--primary);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#previousSlide {
+    left: 10px;
+}
+
+#nextSlide {
+    right: 10px;
+}
+
+
+/* ==========================================
+   ACCORDION / FAQ
+   ========================================== */
+
+.accordion-body {
+    display: none;
+    padding: 15px;
+    background: var(--card);
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    background: var(--card);
+    color: var(--text);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ==========================================
+   MODAL
+   ========================================== */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-box {
+    background: var(--bg);
+    color: var(--text);
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    text-align: center;
+}
+

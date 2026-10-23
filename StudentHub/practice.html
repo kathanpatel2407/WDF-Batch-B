@@ -1,0 +1,189 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Notification Banner -->
+    <div id="notification">
+        📢 Welcome to CHARUSAT Student Portal!
+        <button onclick="closeNotification()">X</button>
+    </div>
+
+
+    <!-- Navigation Bar -->
+    <nav>
+
+        <div class="logo">
+            CHARUSAT
+        </div>
+
+        <!-- Hamburger Button -->
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <div id="menu">
+
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Attendance</a>
+            <a href="#">Results</a>
+            <a href="#">Contact</a>
+
+            <!-- Theme Button -->
+            <button onclick="toggleTheme()" id="themeBtn">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <h1>CHARUSAT Student Portal</h1>
+
+        <p>
+            Welcome to the Student Portal.
+            Here you can access courses, attendance,
+            results and other student information.
+        </p>
+
+
+        <!-- Modal Popup -->
+        <button onclick="openModal()" class="main-btn">
+            Open Student Notice
+        </button>
+
+
+        <!-- Image / Content Slider -->
+        <h2>Announcements</h2>
+
+        <div class="slider">
+
+            <button onclick="previousSlide()">❮</button>
+
+            <div id="slideContent">
+                <h3>📚 New Semester</h3>
+                <p>
+                    Welcome to the new semester.
+                    Check your timetable and courses.
+                </p>
+            </div>
+
+            <button onclick="nextSlide()">❯</button>
+
+        </div>
+
+
+        <!-- FAQ Section -->
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+
+            <button class="faq-question" onclick="toggleFAQ(0)">
+                What is the Student Portal?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                The Student Portal allows students to access
+                attendance, results, courses and other information.
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <button class="faq-question" onclick="toggleFAQ(1)">
+                How can I check my results?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Login to the portal and open the Results section
+                to view your academic results.
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <button class="faq-question" onclick="toggleFAQ(2)">
+                How can I check my attendance?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Open the Attendance section from the navigation menu
+                to view your attendance details.
+            </div>
+
+        </div>
+
+
+        <div class="faq">
+
+            <button class="faq-question" onclick="toggleFAQ(3)">
+                How can I contact the university?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                You can contact the university through the
+                official contact section of the portal.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span onclick="closeModal()" class="close">
+                &times;
+            </span>
+
+            <h2>📢 Important Notice</h2>
+
+            <p>
+                The examination timetable has been updated.
+                Please check the timetable section for details.
+            </p>
+
+            <button onclick="closeModal()">
+                OK
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 CHARUSAT Student Portal
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
